@@ -2,8 +2,16 @@
 
 {% block title %} MedTrack {% endblock %}
 
+{% block style %}
+<style type="text/css">
+	.hero {
+		margin-bottom: 50px;
+	}
+</style>
+{% endblock %}
+
 {% block content %}
-<div class="row">
+<div class="row hero">
 	<div class="col-md-4">
 		<img src="/static/img/logo.png">
 	</div>
@@ -11,6 +19,21 @@
 		<h1>MedTrack makes it easy for doctors to keep tabs on their patients.</h1>
 		<br>
 		<p class="lead">Our SMS system takes care of everything from scheduling appointments to sending prescription updates.</p>
+	</div>
+</div>
+<br>
+<div class="row">
+	<div class="col-md-4">
+		<img src="http://placekitten.com/200/200">
+		<p class="lead">A doctor <a href='register'>registers</a> his clinic</p>
+	</div>
+	<div class="col-md-4">
+		<img src="http://placekitten.com/200/200">
+		<p class="lead">Patients schedule appointments with doctors in their area</p>
+	</div>
+	<div class="col-md-4">
+		<img src="http://placekitten.com/200/200">
+		<p class="lead">Doctors send reminders and schedule followups and receive updates on the condition of their patients</p>
 	</div>
 </div>
 {% endblock %}
