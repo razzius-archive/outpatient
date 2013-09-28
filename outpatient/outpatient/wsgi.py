@@ -6,7 +6,7 @@ SITE_ROOT = dirname(dirname(abspath(__file__)))
 path.append(SITE_ROOT)
 
 #os.environ.setdefault("DJANGO_SETTINGS_MODULE", "outpatient.settings.production")
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "outpatient.settings.local")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "outpatient.settings.production")
 print("static time")
 import dj_static
 # This application object is used by any WSGI server configured to use this
