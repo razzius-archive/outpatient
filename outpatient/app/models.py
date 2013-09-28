@@ -4,13 +4,12 @@ from django.db import models
 
 class Doctor(models.Model):
     name = models.CharField(max_length=50)
-    address = models.CharField(max_length=128)
-    postal_code = models.CharField(max_length=20)
-    city = models.CharField(max_length=80)
-    state = models.CharField(max_length=80)
+    location = models.CharField(max_length=200)
 
 class Reminder(models.Model):
     doctor = models.ForeignKey(Doctor)
     recipient = models.CharField(max_length=80) # phone #
     msg = models.CharField(max_length=140)
     scheduled_time = models.DateTimeField()
+    sent24 = models.BooleanField()
+    sent1 = models.BooleanField()

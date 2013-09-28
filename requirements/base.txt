@@ -9,3 +9,4 @@ django-filter>=0.6
 django-floppyforms>=1.1
 djangorestframework>=2.3.3
 django-braces>=1.0.0
+django-twilio==0.4
