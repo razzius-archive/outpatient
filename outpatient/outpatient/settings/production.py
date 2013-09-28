@@ -50,7 +50,7 @@ SERVER_EMAIL = EMAIL_HOST_USER
 ########## END EMAIL CONFIGURATION
 
 ########## DATABASE CONFIGURATION
-DATABASES['default'] = dj_database_url.config()
+DATABASES = {"default": dj_database_url.config()}
 ########## END DATABASE CONFIGURATION
 
 STATIC_ROOT = 'staticfiles'
