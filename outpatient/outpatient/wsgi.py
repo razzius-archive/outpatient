@@ -7,7 +7,6 @@ path.append(SITE_ROOT)
 
 #os.environ.setdefault("DJANGO_SETTINGS_MODULE", "outpatient.settings.production")
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "outpatient.settings.production")
-print("static time")
 import dj_static
 # This application object is used by any WSGI server configured to use this
 # file. This includes Django's development server, if the WSGI_APPLICATION
