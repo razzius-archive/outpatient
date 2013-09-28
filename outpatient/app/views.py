@@ -17,10 +17,9 @@ def sms(request):
     sender = request.POST.get('From')
     body = request.POST.get('Body', '')
 
-    doctors = Doctor.objects.all()
 
     r = twilio.twiml.Response()
-    r.sms("+55432344322: Botswana Wildlife Training Institute")
+    r.sms("+55432344322: Plot 8448 Segoditshane Road Mica Way Gaborone")
     return r
 
 class Register(CreateView):
