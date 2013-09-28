@@ -5,5 +5,15 @@
 {% block title %} MedTrack {% endblock %}
 
 {% block content %}
-	{% crispy form %}
+<div class="row">
+	<div class="col-md-4">
+		<img src="/static/img/logo.png">
+	</div>
+	<div class="col-md-8">
+		<h3>Thank you for registering with MedTrack.</h3>
+		<p class="lead">Once you enter your name and location, patients that send SMS messages to our number will obtain your contact information.</p>
+		<p>You can then send reminder messages and request periodic updates on their condition.</p>
+		{% crispy form %}
+	</div>
+</div>
 {% endblock %}
