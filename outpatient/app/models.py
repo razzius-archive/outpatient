@@ -11,3 +11,5 @@ class Reminder(models.Model):
     recipient = models.CharField(max_length=80) # phone #
     msg = models.CharField(max_length=140)
     scheduled_time = models.DateTimeField()
+    sent24 = models.BooleanField()
+    sent1 = models.BooleanField()
