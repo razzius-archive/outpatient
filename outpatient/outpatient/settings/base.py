@@ -173,10 +173,7 @@ DJANGO_APPS = (
     # Admin panel and documentation:
     'django.contrib.admin',
     # 'django.contrib.admindocs',
-    'djadmin2',
     # 'djadmin2.themes.djadmin2theme_default',
-    'rest_framework', # for the browsable API templates
-    'floppyforms', # For HTML5 form fields
     'crispy_forms',
 )
 
