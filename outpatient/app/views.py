@@ -8,10 +8,19 @@ from django.shortcuts import render_to_response
 from django.template import RequestContext
 
 from django.contrib import messages
-from .models import Reminder
+from .models import Reminder, Doctor
+from django_twilio.decorators import twilio_view
+import twilio.twiml
 
+@twilio_view
 def sms(request):
-	pass
+    sender = request.POST.get('From')
+    body = request.POST.get('Body', '')
+
+
+    r = twilio.twiml.Response()
+    r.sms("+55432344322: Plot 8448 Segoditshane Road Mica Way Gaborone")
+    return r
 
 class Register(CreateView):
 	form_class = RegistrationForm

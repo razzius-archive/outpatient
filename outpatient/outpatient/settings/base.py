@@ -1,8 +1,9 @@
 """Common settings and globals."""
 
-
+import os
 from os.path import abspath, basename, dirname, join, normpath
 from sys import path
+import os
 
 ########## PATH CONFIGURATION
 # Absolute filesystem path to the Django project directory:
@@ -185,6 +186,7 @@ THIRD_PARTY_APPS = (
 
 # Apps specific for this project go here.
 LOCAL_APPS = (
+    'django_twilio',
     'app',
 )
 
@@ -232,3 +234,7 @@ WSGI_APPLICATION = '%s.wsgi.application' % SITE_NAME
 ########## END WSGI CONFIGURATION
 AUTH_PROFILE_MODULE = 'app.models.Doctor'
 CRISPY_TEMPLATE_PACK = 'bootstrap3'
+
+TWILIO_ACCOUNT_SID = os.environ["TWILIO_ACCOUNT_SID"]
+TWILIO_AUTH_TOKEN = os.environ["TWILIO_AUTH_TOKEN"]
+TWILIO_DEFAULT_CALLERID = 'MedTrack'
