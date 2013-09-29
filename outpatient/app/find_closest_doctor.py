@@ -71,27 +71,21 @@ def closestDoctorByDistance(nearby_doctors_list):
 		print distance_result
 		distance_result_list.append(distance_result)
 	closest_doctor_by_distance = min(distance_result_list)
+	return closestDoctorByDistance
 
-	# output: (PatientName, NearestDoctorPhoneNumber, NearestDoctorAddress) => Tuple(PatientNumberString, NearestDoctorPhoneNumberString, NearestDoctorAddressString)
-	try:
-        	print doctors_info, "\n"
-        	print allDoctors(doctors_info), "\n"
-        	print nearbyDoctorsList(allDoctors(doctors_info)), "\n"
-#		return closest_doctor_by_distance
-	except:
-        	return  "'345-345-2222': 'Botswana Wildlife Training Institute, P. O. Box 369, Maun, Botswana'"
+# (PatientName, NearestDoctorPhoneNumber, NearestDoctorAddress) => Tuple(PatientNumberString, NearestDoctorPhoneNumberString, NearestDoctorAddressString)
+def nearestDoctors(patient):
+	list_of_nearest_doctors = [()] # a list of the nearest doctor to given patient; from closest doctor to given patient
+	return list_of_nearest_doctors
 
-def hack():
-	return "'345-345-2222' : 'Botswana Wildlife Training Institute, P. O. Box 369, Maun, Botswana'"
-
-print hack()
-"""
-# output: (PatientName, NearestDoctorPhoneNumber, NearestDoctorAddress) => Tuple(PatientNumberString, NearestDoctorPhoneNumberString, NearestDoctorAddressString)
+# DEBUGGING
 try:
 	print doctors_info, "\n"
 	print allDoctors(doctors_info), "\n"
 	print nearbyDoctorsList(allDoctors(doctors_info)), "\n"
 	print closestDoctorByDistance(nearbyDoctorsList(allDoctors(doctors_info)))
 except:
-	print "'345-345-2222': 'Botswana Wildlife Training Institute, P. O. Box 369, Maun, Botswana'"
-"""
+	print "ERROR"
+
+#TODO: output: (PatientName, NearestDoctorPhoneNumber, NearestDoctorAddress) => Tuple(PatientNumberString, NearestDoctorPhoneNumberString, NearestDoctorAddressString)
+
